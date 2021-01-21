@@ -52,7 +52,7 @@ let temp = false;
 
 let wrong = 0;
 
-let selectedTime;
+let selectedTime = 15;
 
 /***************FUNCTIONS***************/
 
@@ -112,14 +112,6 @@ document.addEventListener("keypress", (e) => {
         timeUp = true;
 
         if (!temp) {
-          console.log(
-            wpm.forEach(
-              (
-                el // (el) => (el.textContent = +el.textContent * (60 / selectedTime))
-              ) => selectedTime
-            )
-          );
-
           mainContent.style.display = "none";
           results.style.display = "flex";
           footer.style.display = "none";
@@ -138,7 +130,10 @@ document.addEventListener("keypress", (e) => {
       textArr.shift();
 
       if (correctWords[correctWords.length - 1] === " ") {
-        wpm.forEach((el) => (el.textContent = +el.textContent + 1));
+        wpm.forEach(
+          (el) => (el.textContent = +el.textContent + 1 * (60 / +selectedTime))
+        );
+
         textArr.push(`${words[Math.floor(Math.random() * words.length)]} `);
       }
 
