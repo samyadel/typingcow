@@ -19,6 +19,7 @@ const leaderboard = document.getElementById("leaderboard");
 const settings = document.getElementById("settings");
 const profile = document.getElementById("profile");
 const overlay = document.getElementById("overlay");
+const footer = document.querySelector("footer");
 
 /***************VARIABLES***************/
 
@@ -121,6 +122,7 @@ document.addEventListener("keypress", (e) => {
 
           mainContent.style.display = "none";
           results.style.display = "flex";
+          footer.style.display = "none";
 
           temp = true;
         }
