@@ -4,6 +4,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="shortcut icon" href="./resources/images/favicon2.ico" type="image/x-icon">
   <link rel="preconnect" href="https://fonts.gstatic.com">
   <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&display=swap"
     rel="stylesheet">
@@ -44,48 +45,57 @@
   <main>
     <header>
       <!-- <h2 class="timer" id="timer" style="display: none;">60</h2> -->
-
+      
       <div>
         <div class="text">
-          <p id="text">more number work form over these also and they very follow work one over time from interest increase however point as great little move call say like course off about work lead give move </p>
+          <div>
+          <div class="capslock" id="capslock">
+            <p><i class="fas fa-lock"></i> Caps Lock</p>
+          </div>
+          <!-- <p id="text"><span class="correct" id="correct"></span>more number work form over these also and they very follow work one over time from interest increase however point as great little move call say like course off about work lead give move </p>
+           -->
+          <p id="text"></p>
+          </div>
         </div>
+
+        <input type="text" id="user-input" class="user-input" data-lpignore="true">
 
         <div class="keyboard">
           <div class="wrapper">
             <div class="keys">
-              <input type="button" value="Q" id="q">
-              <input type="button" value="W" id="w">
-              <input type="button" value="E" id="e">
-              <input type="button" value="R" id="r">
-              <input type="button" value="T" id="t">
-              <input type="button" value="Y" id="y">
-              <input type="button" value="U" id="u">
-              <input type="button" value="I" id="i">
-              <input type="button" value="O" id="o">
-              <input type="button" value="P" id="p">
+              <div type="button" value="Q" id="q">Q</div>
+              <div type="button" value="W" id="w">W</div>
+              <div type="button" value="E" id="e">E</div>
+              <div type="button" value="R" id="r">R</div>
+              <div type="button" value="T" id="t">T</div>
+              <div type="button" value="Y" id="y">Y</div>
+              <div type="button" value="U" id="u">U</div>
+              <div type="button" value="I" id="i">I</div>
+              <div type="button" value="O" id="o">O</div>
+              <div type="button" value="P" id="p">P</div>
             </div>
             <div class="keys">
-              <input type="button" value="A" id="a">
-              <input type="button" value="S" id="s">
-              <input type="button" value="D" id="d">
-              <input type="button" value="F" id="f">
-              <input type="button" value="G" id="g">
-              <input type="button" value="H" id="h">
-              <input type="button" value="J" id="j">
-              <input type="button" value="K" id="k">
-              <input type="button" value="L" id="l">
+              <div type="button" value="A" id="a">A</div>
+              <div type="button" value="S" id="s">S</div>
+              <div type="button" value="D" id="d">D</div>
+              <div type="button" value="F" id="f">F</div>
+              <div type="button" value="G" id="g">G</div>
+              <div type="button" value="H" id="h">H</div>
+              <div type="button" value="J" id="j">J</div>
+              <div type="button" value="K" id="k">K</div>
+              <div type="button" value="L" id="l">L</div>
             </div>
             <div class="keys">
-              <input type="button" value="Z" id="z">
-              <input type="button" value="X" id="x">
-              <input type="button" value="C" id="c">
-              <input type="button" value="V" id="v">
-              <input type="button" value="B" id="b">
-              <input type="button" value="N" id="n">
-              <input type="button" value="M" id="m">
+              <div type="button" value="Z" id="z">Z</div>
+              <div type="button" value="X" id="x">X</div>
+              <div type="button" value="C" id="c">C</div>
+              <div type="button" value="V" id="v">V</div>
+              <div type="button" value="B" id="b">B</div>
+              <div type="button" value="N" id="n">N</div>
+              <div type="button" value="M" id="m">M</div>
             </div>
             <div class="keys">
-              <input type="button" value="SPACE" id=" ">
+              <div type="button" value="SPACE" id=" ">SPACE</div>
             </div>
           </div>
         </div>
@@ -148,10 +158,10 @@
         <h2 id="cpm">0</h2>
       </div>
     
-      <div class="result">
+      <!-- <div class="result">
         <p>acc</p>
         <h2 class="acc">0%</h2>
-      </div>
+      </div> -->
     </section>
 
     <section class="card" id="leaderboard">
@@ -201,12 +211,12 @@
         </div>
       </div>
     
-      <div class="stat">
+      <!-- <div class="stat">
         <div>
           <h2 class="acc">0%</h2>
           <p>acc</p>
         </div>
-      </div>
+      </div> -->
     </div>
   </footer>
 

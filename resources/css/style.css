@@ -133,7 +133,7 @@ main header > div {
   padding-right: 10px;
   position: relative;
   border-radius: 10px;
-  overflow: hidden;
+  /* overflow: hidden; */
   /* box-shadow: 4px 4px 15px rgba(0, 0, 0, 0.4); */
 }
 
@@ -141,6 +141,10 @@ main header > div {
   font-size: 24px;
   font-family: "Roboto Mono", monospace;
   line-height: 1.6;
+}
+
+.correct {
+  color: #fff;
 }
 
 .stats {
@@ -234,6 +238,7 @@ footer a:hover {
   flex-basis: 100%;
   /* position: absolute; */
   /* bottom: 100px; */
+  font-family: "Roboto", sans-serif;
 }
 
 .wrapper {
@@ -249,27 +254,26 @@ footer a:hover {
   justify-content: center;
 }
 
-.wrapper .keys input {
+.wrapper .keys div {
   height: 50px;
   min-width: 50px;
   padding: 10px;
-  border: none;
-  outline: none;
-  /* background: rgb(236, 76, 86); */
   background: #af8750;
   margin: 10px;
   color: #fff;
   font-size: 20px;
   border-radius: 5px;
-  cursor: default;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
-.wrapper .keys input.pressed {
+.wrapper .keys div.pressed {
   font-size: 19px;
   background-color: rgb(27, 31, 38);
 }
 
-.wrapper .keys input[value="SPACE"] {
+.wrapper .keys div[value="SPACE"] {
   width: 60%;
 }
 
@@ -301,4 +305,43 @@ footer a:hover {
   position: absolute;
   z-index: 1;
   display: none;
+}
+
+.user-input {
+  background-color: transparent;
+  border: none;
+  border-bottom: 1px solid #fff;
+  width: 100%;
+  outline: none;
+  font-size: 30px;
+  color: #af8750;
+  text-align: center;
+  font-family: "Roboto Mono", monospace;
+}
+
+.correct {
+  color: #fff;
+}
+
+.incorrect {
+  color: #af8750;
+  text-decoration: underline;
+}
+
+.capslock {
+  height: 50px;
+  width: 150px;
+  background-color: #af8750;
+  border-radius: 5px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0 auto 20px;
+  visibility: hidden;
+}
+
+.capslock p,
+.capslock i {
+  font-size: 16px;
+  color: #fff;
 }
