@@ -1,6 +1,7 @@
 /***************DOM SELECTORS***************/
 
-const RANDOM_QUOTE_API_URL = "http://api.quotable.io/random";
+// const RANDOM_QUOTE_API_URL = "http://api.quotable.io/random";
+const RANDOM_QUOTE_API_URL = "https://api.quotable.io/random";
 const mainContent = document.querySelector("main header");
 const time = document.querySelector("#timer");
 const text = document.getElementById("text");
